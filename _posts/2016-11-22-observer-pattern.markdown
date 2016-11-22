@@ -41,25 +41,25 @@ Pub/Sub 모델로도 불리기도 합니다. 1:N 의 객체 의존성을 정의�
  */
 class Star extends EventEmitter {
   constructor() {
-      this.fanList = [];
+    this.fanList = [];
   }
   
   addFan(fan){
-      this.fanList.push(fan);
+    this.fanList.push(fan);
   }
   
   removeFan(fan){
-		this.fanList = this.fanList.filter((person) => {
-		    return fan === person;
-		});
+    this.fanList = this.fanList.filter((person) => {
+      return fan === person;
+    });
   }
   
   sing() {
-     this.emit('sing');
+    this.emit('sing');
   }
   
   fallInLoveWith(name) {
-     this.emit('scandle');
+    this.emit('scandle');
   }
 }
 ```
@@ -72,11 +72,11 @@ class Star extends EventEmitter {
  * Fan Class
  */
 class Fan {
-   constructor(star) {
-   }
-   shout() {
-       console.log('I love you!');
-   }
+  constructor(star) {
+  }
+  shout() {
+    console.log('I love you!');
+  }
 }
 ```
 
@@ -94,20 +94,22 @@ rockStar.addFan(elena);
 
 // rockStar가 노래를 하면 팬은 shout를 합니다
 rockStar.on('sing', () => {
-   sam.shout();
-   elena.shout();
+  sam.shout();
+  elena.shout();
 });
 
 // 스캔들이 터지고 팬이 떠나갑니다
 rockStar.on('scandle', () => {
-   rockStar.removeFan(sam);
-   rockStar.removeFan(elena);
+  rockStar.removeFan(sam);
+  rockStar.removeFan(elena);
 });
 
 // rockStar가 노래를 합니다.
+// 그럼 샘과 엘레나는 I love you!를 외치게 됩니다.
 rockStar.sing();
 
 // rockStar가 Suji 와 사랑에 빠졌습니다.
+// 이벤트 시스템에 의해 팬이 떠나갑니다.
 rockStar.fallInLoveWith('Suji');
 ```
 
@@ -118,4 +120,5 @@ rockStar.fallInLoveWith('Suji');
 
 ### 정리
 이런 간단한 구조를 응용하면 여러가지 형태의 클래스의 관계를 느슨한 결합으로 엮어줄 수 있습니다.  
-실제 실무에서도 많이 사용되는 패턴이며 중요한 패턴이므로 꼭 익숙해져야 겠습니다.  
+근래 많은 프레임워크들이 옵저버 패턴을 활용하여 구현 되고 있는데,  
+실무에서도 많이 사용되는 패턴이며 중요한 패턴이므로 꼭 익숙해져야 겠습니다.  
