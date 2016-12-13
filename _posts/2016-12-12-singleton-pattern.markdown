@@ -14,9 +14,10 @@ categories: jekyll update
   
 
 ## 싱글톤 패턴의 특징
-1. 생성자가 없습니다.  
+### 생성자가 없습니다.  
 new 키워드를 통해 클래스를 생성하는 것이 아니라 getInstance 라는 형태의 메서드를 통해 객체 인스턴스를 가져옵니다.    
 
+##### 고전적인 싱글톤 패턴 구현법
 ```java
 class Singleton { 
     private static Singleton instance;
@@ -30,10 +31,10 @@ class Singleton {
 }
 ```
 
-2. Only One 인스턴스 
+### Only One 인스턴스  
 해당 함수의 최초 호출 시점에 자동으로 인스턴스가 생성되고 그 인스턴스를 전달합니다.
 
-### ClassLoader에 의해 미리 인스턴스를 생성하는 방법
+##### ClassLoader에 의해 미리 인스턴스를 생성하는 방법
 ```java
 class Singleton { 
     private static Singleton instance = new Singleton(); 
@@ -47,7 +48,7 @@ class Singleton {
 ```
 
 ### 단점 
-
+싱글턴 패턴을 사용할 때 주의해야 할 것은, 패턴의 특성상 어플리케이션 전체 범위에 영향을 주는 일종의 상태 정보가 생긴다는 것입니다.  
 참고로 전역 변수를 사용할 때의 단점은 프로그램이 시작할 때부터 자원을 차지하고 들어가기 때문에 간혹 자원을 불필요하게 많이 사용할 가능성이 있습니다.
 
 ### 마치며
