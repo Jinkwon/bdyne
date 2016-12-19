@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Decorator Pattern"
+title:  "데코레이터 패턴 (Decorator Pattern)"
 date:   2016-11-22 02:19:11 +0900
-categories: jekyll update
+categories: design pattern
 ---
 
 데코레이터 패턴은 OCP(Open Closed Principle) 를 빼놓고는 이야기를 할 수가 없습니다.  

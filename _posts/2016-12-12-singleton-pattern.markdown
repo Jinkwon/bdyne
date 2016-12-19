@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Singleton Pattern"
+title:  "싱글턴 패턴 (singleton pattern)"
 date:   2016-11-22 02:19:11 +0900
-categories: jekyll update
+categories: design pattern
 ---
 
-## 싱글턴 패턴 (singleton pattern)
 소프트웨어를 디자인 하다보면 하나만 있으면 되는 객체들이 있습니다.  
 어플리케이션의 생명주기 안에서 단 하나의 클래스에 단 하나의 인스턴스만 생성하는 것을 싱글톤 패턴이라고 합니다.  
 유틸과 같은 공통으로 사용하는 클래스에 적용하면 알맞을 것입니다.    

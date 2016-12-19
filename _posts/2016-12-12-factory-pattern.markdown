@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Factory Pattern"
+title:  "팩토리 패턴 (Factory Pattern)"
 date:   2016-11-22 02:19:11 +0900
-categories: jekyll update
+categories: design pattern
 ---
 
 팩토리 패턴의 목적은 객체들을 생성하는 것입니다.  

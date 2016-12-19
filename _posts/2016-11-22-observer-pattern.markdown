@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Observer Pattern"
+title:  "옵저버 패턴 (Observer Pattern)"
 date:   2016-11-22 02:19:11 +0900
-categories: jekyll update
+categories: design pattern
 ---
 
 디자인 패턴의 정리를 위해 글 작성을 시작했습니다.  
