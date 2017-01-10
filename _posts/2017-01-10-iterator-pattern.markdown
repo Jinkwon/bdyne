@@ -44,7 +44,9 @@ for (var index = 0; index < myArray.length; index++) {
   console.log(myArray[index]);
 }
 ```
+
 ES5 발표 이후에는 forEach 메소드를 쓸 수 있게 되었지만 iterator 개념처럼 완벽하게 이터레이터의 기능을 이용할 수는 없습니다.
+
 ```javascript
 myArray.forEach(function (value) {
   console.log(value);
