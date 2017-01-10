@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "이터레이터 패턴 (Iterator Pattern)"
-date:   2017-01-10 00:00:00 +0900
+date:   2017-01-10 01:00:00 +0900
 categories: design pattern
 ---
 
