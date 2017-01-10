@@ -11,7 +11,7 @@ categories: design pattern
 템플릿 메소드를 이용하면 알고리즘 구조는 그대로 유지하면서 특정 단계만 서브 클래스에서 새로 정의하도록 할 수 있습니다.  
 
 
-![factory screenshot]({{ site.url }}/images/attachment/template-method.png)
+![template-method screenshot]({{ site.url }}/images/attachment/template-method.png)
 
 ### Template 사용을 하면,
 상위 클래스에서는 하위 클래스에서 메소드가 구현되길 기대하고,  
